@@ -75,7 +75,7 @@ async function getBalance() {
     })
   }
 
-  const balance = publicClient.getBalance({
+  const balance = await publicClient.getBalance({
     address: contractAddress,
   })
   console.log(formatEther(balance))
